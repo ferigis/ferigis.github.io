@@ -1,0 +1,40 @@
+# Site settings
+title: Felipe Ripoll
+description: 'Software Engineer with experience in Erlang/OTP, Elixir, Java, Java EE, distributed systems on different industries like Banking, Finance, Telecommunications...
+
+Experience also in frontend technologies like Javascript, jQuery, html, AngularJS, CSS, bootstrap'
+url: 'feliperipoll.es'
+baseurl: '/'
+# google_analytics: 'UA-XXXXXX-X'
+disqus_shortname: 'feliperipoll'
+
+author:
+  name: 'Felipe Ripoll'
+  email: ferigis@gmail.com
+  twitter_username: FelipeRipoll84
+  github_username:  ferigis
+  linkedin_username:  ferigis
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+
+# Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+gems: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
